@@ -1,0 +1,6 @@
+{
+  "name": "tb",
+  "dependencies": {
+    "mousetrap": "~1.5.2"
+  }
+}

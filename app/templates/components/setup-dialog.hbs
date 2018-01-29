@@ -1,0 +1,43 @@
+{{#simple-modal title="Настройки" onClose=onTheClose onOk=onTheOk}}
+<table class="setup-table">
+    <tr><th rowspan="2" colspan="2">Действия</th><th colspan="2">Разрядность чисел</th><th rowspan="2">Число знаков после запятой в результате</th></tr>
+    <tr>
+        <td class="td-0">1</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>{{input type="checkbox" name="add" checked=isAdd}}</td>
+        <td>Сложение</td>
+        <td>{{number-of-digits-selector placeholder='1' numberOfDigits=firstNumberOfDigits1}}</td>
+        <td>{{number-of-digits-selector placeholder='1' numberOfDigits=secondNumberOfDigits1}}</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>{{input type="checkbox" name="substitute" checked=isSubstitute}}</td>
+        <td>Вычитание</td>
+        <td>{{number-of-digits-selector placeholder='2' numberOfDigits=firstNumberOfDigits2}}</td>
+        <td>{{number-of-digits-selector placeholder='2' numberOfDigits=secondNumberOfDigits2}}</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>{{input type="checkbox" name="power" checked=isPower}}</td>
+        <td>Умножение</td>
+        <td>{{number-of-digits-selector placeholder='3' numberOfDigits=firstNumberOfDigits3}}</td>
+        <td>{{number-of-digits-selector placeholder='3' numberOfDigits=secondNumberOfDigits3}}</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>{{input type="checkbox" name="divide" checked=isDivide}}</td>
+        <td>Деление</td>
+        <td>{{number-of-digits-selector placeholder='4' numberOfDigits=firstNumberOfDigits4}}</td>
+        <td>{{number-of-digits-selector placeholder='4' numberOfDigits=secondNumberOfDigits4}}</td>
+        <td>
+            <td>{{number-of-digits-selector placeholder='4' numberOfDigits=thirdNumberOfDigits4}}</td>
+            <td class="explanation">В некоторых случаях, результат следует вычислять с точностью больше выбранной, а затем округлять до нужного знака.</td>
+        </td>
+    </tr>
+</table>
+    <div class="modal-bottom">
+      <button class="ok-modal" {{action 'okConfig'}}>Сохранить</button>
+    </div>
+{{/simple-modal}}

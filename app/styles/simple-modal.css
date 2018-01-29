@@ -1,0 +1,123 @@
+.modal-fog {
+  background: rgba(30, 30, 30, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
+.modal-frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  border-radius: 10px;
+  background: white;
+  /* width: 70%; */
+  z-index: 100;
+  padding: 5px 10px 15px 10px;
+}
+.modal-title {
+  width: 100%;
+  padding: 5px 0px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-size: 16pt;
+  font-family: serif;
+}
+.modal-body {
+  z-index: 100;
+  font-family: serif;
+  text-align: center;
+  padding: 10px;
+}
+.modal-bottom {
+  width: 100%;
+  padding: 10px 0px 0px 0px;
+  border-top: 1px solid black;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16pt;
+  font-family: serif;
+}
+.close-modal {
+    display: inline-block;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    font-family: serif;
+    font-size: 16pt;
+    background-color: white;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.setup-table {
+    /* display: inline-block; */
+    border-collapse: collapse;
+    font-size: 14pt;
+    /* width: 100%; */
+}
+
+.setup-table td {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 5px 10px;
+}
+
+.setup-table th {
+    border-bottom: 1px solid black;
+    padding: 5px 10px;
+    font-weight: normal;
+}
+
+.setup-table th:first-child {
+    border-right: 1px solid black;
+    padding: 5px 10px;
+    font-weight: normal;
+}
+
+.setup-table th:nth-child(2) {
+    border-right: 1px solid black;
+    padding: 5px 10px;
+}
+
+.setup-table td:nth-child(n + 2):nth-child(-n + 4) {
+    border-right: 1px solid black;
+    padding: 5px 10px;
+}
+
+.setup-table tr:last-child td {
+    border-bottom: none;
+    padding: 5px 10px;
+}
+
+.setup-table td button {
+    margin: 0px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-family: serif;
+    font-size: 16pt;
+}
+
+.setup-table .td-0 {
+    border-right: 1px solid black;
+    padding: 5px 10px;
+}
+
+.setup-table td .explanation {
+    text-align: left;
+    border: none !important;
+    font-size: 12pt;
+}

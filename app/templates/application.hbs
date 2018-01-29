@@ -1,0 +1,26 @@
+ <div class="stats">
+    Решено примеров: {{solved}}<br />
+    Пропущено: {{skiped}}<br />
+    Ошибок: {{errors}}
+ </div>
+ <button {{action 'toggleSetupModal'}} class="setup">H</button>
+ {{#if isSetupModalShown}}
+     {{setup-dialog onTheClose=(action 'toggleSetupModal') onTheOk=(action 'saveConfig')}}
+{{/if}}
+<div class="main">
+    <div class="container">
+        <div class="expression">
+            {{firstElement}} {{operator}} {{secondElement}}
+        </div>
+        <div id="eq-sign" class="equiv">
+            {{{equivalenceSign}}}
+        </div>
+        <div class="result">
+            {{input type="text" size=resultWidth id="result" value=textValue insert-newline='checkResult' class=inputClass autofocus="true"}}
+        </div>
+    </div>
+    <!-- <button {{action 'skipItem'}} class="skip">Пропустить</button> -->
+</div>
+<span class="bottom-left">Пропустить пример: Ctrl + пробел</span>
+<span class="bottom-right">Начать снова: Ctrl + F5</span>
+{{outlet}}

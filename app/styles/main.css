@@ -1,0 +1,115 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
+    font-size: 60pt;
+    font-family: serif;
+}
+
+.container {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.expression {
+    display: inline-block;
+    margin: 0px;
+    margin-left: auto;
+    padding: 0px;
+    /* width: 45%; */
+    text-align: right;
+    vertical-align: middle;
+    /* border: 1px solid green; */
+}
+
+.equiv {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    /* width: 10%; */
+    text-align: center;
+    vertical-align: middle;
+    /* border: 1px solid brown; */
+}
+
+.result {
+    display: inline-block;
+    margin: 0px;
+    margin-right: auto;
+    padding: 0px;
+    /* width: 40%; */
+    text-align: left;
+    vertical-align: middle;
+    /* border: 1px solid blue; */
+}
+
+input[type="text"] {
+    font-size: 60pt;
+    font-family: serif;
+    border-radius: 10px;
+
+}
+
+.input-right {
+    border: 2px solid #27cb27;
+}
+
+.input-normal {
+    outline: none;
+    border: 2px solid #f0f0f0;
+}
+
+.input-wrong {
+    border: 2px solid red;
+}
+
+.skip {
+    display: inline-block;
+}
+
+.setup {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: serif;
+}
+
+.bottom-left {
+    position: fixed;
+    bottom: 0px;
+    left: 10px;
+    font-size: 20pt;
+    font-family: serif;
+}
+
+.bottom-right {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    font-size: 20pt;
+    font-family: serif;
+}
+.stats {
+    margin: 20px;
+    font-family: serif;
+    font-size: 16pt;
+}
